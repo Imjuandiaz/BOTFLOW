@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI Receptionist</title>
+<link rel="stylesheet" href="style.css"/>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+<body>
+<header class="topbar">
+<div class="container row">
+<div class="brand">
+<img alt="BotFlow logo" class="logo" src="images/logo.png"/ loading="lazy">
+<span class="brand-name">BotFlow</span>
+</div>
+<nav class="nav">
+<a data-i18n="nav_features" href="#features">Soluciones</a>
+<a data-i18n="nav_about" href="#about">Sobre mí</a>
+<a data-i18n="nav_pricing" href="#pricing">Planes</a>
+<a data-i18n="nav_faq" href="#faq">FAQ</a>
+</nav>
+<div class="actions">
+<a class="btn ghost" data-i18n="cta_quick" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jdrd6903/30min'}); return false;">Demo consulta</a>
+<div class="lang-switch">
+<button aria-label="Cambiar a Español" id="btn-es">ES</button>
+<button aria-label="Switch to English" id="btn-en">EN</button>
+</div>
+</div>
+</div>
+
+  <div id="lang-switch" style="position:fixed;top:12px;right:16px;z-index:2000;">
+    <button id="btn-es" aria-label="ES">ES</button>
+    <button id="btn-en" aria-label="EN">EN</button>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container grid2">
+    <div class="hero-copy">
+      <h1>AI Receptionist</h1>
+      <p class="sub">Handles calls, schedules appointments and answers FAQs with natural voice.</p>
+      <ul class="stress">
+      <li>24/7 responses and key data capture</li><li>Auto-scheduling and calendar sync</li><li>Filters and qualifies leads before human handoff</li><li>Reduces response time and eliminates missed calls</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jdrd6903/30min'}); return false;">Book demo</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <!-- image preserved from original style -->
+      <img src="images/ai_receptionist.png" alt="AI Receptionist" loading="lazy" style="max-width:100%;height:auto;border-radius:12px"/ loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2>How it helps your business</h2>
+    <div class="cards">
+      <article class="card"><h3>Benefit 1</h3><p>Improves conversion.</p></article>
+      <article class="card"><h3>Benefit 2</h3><p>Reduces costs.</p></article>
+      <article class="card"><h3>Benefit 3</h3><p>Scales easily.</p></article>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+<div class="container">
+<p>© <span id="year"></span> BotFlow · <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

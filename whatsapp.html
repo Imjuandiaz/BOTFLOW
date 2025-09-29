@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhatsApp Assistant – BotFlow</title>
+  <meta name="description" content="Asistente 24/7 para WhatsApp con reservas y CRM"/>
+  <link rel="preconnect" href="https://assets.calendly.com"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="images/favicon.png"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="container row">
+    <div class="brand">
+      <img src="images/logo.png" alt="BotFlow logo" class="logo"/ loading="lazy">
+      <span class="brand-name">BotFlow</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html#features">Soluciones</a>
+      <a href="index.html#about">Sobre mí</a>
+      <a href="index.html#pricing">Planes</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="actions">
+      <a class="btn ghost" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jdrd6903/30min'}); return false;">Demo consulta</a>
+      <div class="lang-switch">
+        <button aria-label="Cambiar a Español" id="btn-es">ES</button>
+        <button aria-label="Switch to English" id="btn-en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container grid2">
+    <div class="hero-copy">
+      <h1>WhatsApp Assistant</h1>
+      <p class="sub">Atiende WhatsApp 24/7, integra calendario y CRM, y convierte conversaciones en citas reales.</p>
+      <ul class="stress">
+        <li>✔️ Respuestas rápidas y follow-ups automáticos</li>
+        <li>✔️ Enlaces directos a reserva</li>
+        <li>✔️ Plantillas y rich media</li>
+        <li>✔️ Cumplimiento y opt-in</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jdrd6903/30min'}); return false;">Agendar demo</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img alt="WhatsApp Assistant" src="https://cdn-icons-png.flaticon.com/512/7214/7214069.png"/ loading="lazy">
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="container">
+    <h2>Beneficios clave</h2>
+    <div class="cards">
+      <article class="card"><h3>Leads calificados</h3><p>Flujos que piden lo esencial antes de agendar.</p></article>
+      <article class="card"><h3>Cierre más rápido</h3><p>Respuestas inmediatas y CTAs claros a la reserva.</p></article>
+      <article class="card"><h3>Historial centralizado</h3><p>CRM actualizado con cada conversación.</p></article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> BotFlow · <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</body>
+</html>
