@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboards & KPIs – BotFlow</title>
+  <meta name="description" content="Paneles ejecutivos con métricas accionables"/>
+  <link rel="preconnect" href="https://assets.calendly.com"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="images/newicon.png"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="container row">
+    <div class="brand">
+      <img src="images/newicon.png" alt="BotFlow logo" class="logo"/>
+      <span class="brand-name">BotFlow</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html#features">Soluciones</a>
+      <a href="index.html#about">Sobre mí</a>
+      <a href="index.html#pricing">Planes</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="actions">
+      <a class="btn ghost" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jdrd6903/30min'}); return false;">Demo consulta</a>
+      <div class="lang-switch">
+        <button aria-label="Cambiar a Español" id="btn-es">ES</button>
+        <button aria-label="Switch to English" id="btn-en">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container grid2">
+    <div class="hero-copy">
+      <h1>Dashboards & KPIs</h1>
+      <p class="sub">Métricas accionables de ventas, marketing y operaciones para decidir con datos.</p>
+      <ul class="stress">
+        <li>✔️ Embudos, ingresos y cohortes</li>
+        <li>✔️ Integración con tus fuentes</li>
+        <li>✔️ Alertas y objetivos</li>
+        <li>✔️ Panel ejecutivo</li>
+      </ul>
+      <div class="cta-row">
+        <a class="btn primary" href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jdrd6903/30min'}); return false;">Agendar demo</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img alt="Dashboards & KPIs" src="https://miro.medium.com/v2/resize:fit:727/1*C0LdAPoF8kaq0xhDCjzM0A.png"/>
+    </div>
+  </div>
+</section>
+<section class="features">
+  <div class="container">
+    <h2>Impacto en negocio</h2>
+    <div class="cards">
+      <article class="card"><h3>Visibilidad</h3><p>Unifica ventas y marketing en un panel.</p></article>
+      <article class="card"><h3>Velocidad</h3><p>Detecta caídas y oportunidades al instante.</p></article>
+      <article class="card"><h3>ROI</h3><p>Atrapa fugas y prioriza lo que sí convierte.</p></article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>© <span id="year"></span> BotFlow · <span data-i18n="footer_rights">Todos los derechos reservados.</span></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</body>
+</html>
